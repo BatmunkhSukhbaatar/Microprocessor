@@ -1,0 +1,19 @@
+#ORG 1000H
+	MVI A,05H
+	STA 2000H
+
+	LDA 2000H
+	MOV B,A
+	MVI C,03H
+	MVI A,00H
+
+                        CALL URJVER
+	STA 3000H
+	HLT
+
+             URJVER:
+	ADD B
+	DCR C
+	JNZ URJVER
+	RET	
+

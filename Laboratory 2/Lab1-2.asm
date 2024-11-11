@@ -1,0 +1,23 @@
+#ORG 1000H
+	MVI A,64H
+	MVI L,01H
+
+	MOV B,A
+	ADD L 
+
+	MOV C,A
+	ADD L
+
+	MOV D,A
+	ADD L
+	
+	MOV E,A
+	ADD L
+	
+	MOV H,A
+	ADD L
+	
+	MOV L,A
+	MVI A,00H
+
+	HLT
